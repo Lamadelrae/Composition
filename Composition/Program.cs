@@ -1,6 +1,8 @@
 ﻿using Composition.Models;
 
-var job = new Job("Software Engineer");
-var person = new Person("Matthew", job);
+var person = new Person("Matthew");
 
-Console.WriteLine($"My name is {person.Name} and I am a {person.Job.Name}.");
+Console.WriteLine($"Hi! My name is {person.Name}!");
+Console.WriteLine("Here are some of my organs:");
+
+foreach (var organ in person.Organs) Console.WriteLine(organ.Name);

@@ -1,7 +1,7 @@
 namespace Composition.Models;
 
-public class Job
+public class Organ
 {
     public string Name { get; set; }
-    public Job(string name) => Name = name;
+    public Organ(string name) => Name = name;
 }
