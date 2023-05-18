@@ -1,6 +1,6 @@
 ﻿using Composition.Models;
 
-var person = new Person("Matthew");
+using var person = new Person("Matthew");
 
 Console.WriteLine($"Hi! My name is {person.Name}!");
 Console.WriteLine("Here are some of my organs:");

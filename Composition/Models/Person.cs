@@ -10,6 +10,13 @@ public class Person : IDisposable
     public Person(string name)
     {
         Name = name;
+
+        /* 
+         * Composition is a subset of association.
+         * Therefore, in composition, the "Father" object OWNS the "Child" object, controlling its lifetime.
+         * In this case, a Person owns the Organs, so if the Person "dies" the organs also die.
+        */
+
         Organs = new List<Organ>()
         {
             new Organ(name: "Heart"),
